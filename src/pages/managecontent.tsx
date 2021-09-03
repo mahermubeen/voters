@@ -16,7 +16,6 @@ import { useGetAllPostsQuery } from "../services/post";
 export default function Index() {
   const token = localStorage.getItem("user-token");
   const { data, isSuccess } = useGetAllPostsQuery(token);
-  console.log("data", data);
 
   return (
     <>
