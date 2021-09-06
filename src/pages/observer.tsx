@@ -62,9 +62,9 @@ export default function Index() {
             </div>
             <div className='snakd2xs'>
               <div className='content-card1 cardcst'>
-                <h2 className='fw600 fs24 lh48'>Registered Observers</h2>
-                <h1 className='fw600 fs48 lh48'>125</h1>
-                <h2 className='fw600 fs24 lh48'>Registered Observers</h2>
+                <h2 className='fw600 fs24 lh48'>Pending Requests</h2>
+                <h1 className='fw600 fs48 lh48'>5</h1>
+                <h2 className='fw600 fs24 lh48'>Total Observers</h2>
                 <h1 className='fw600 fs48 lh48'>125</h1>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function Index() {
                   ElectionCenters: 'ABC Election Center',
                 },
               ]}
-              title='Current Observer'
+              title='Registered Observer'
             />
           </div>
         </div>

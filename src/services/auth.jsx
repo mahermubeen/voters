@@ -7,10 +7,7 @@ export const authApi = createApi({
 
   endpoints: (builder) => ({
     getAllUsers: builder.query({
-      query: () => ({
-        url: "auth/users",
-        method: "GET",
-      }),
+      query: (page = 1) => `auth/users?page=${page}`,
     }),
     getUser: builder.query({
       query: (id) => ({

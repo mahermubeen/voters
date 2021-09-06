@@ -6,15 +6,15 @@ export default function PostTable({ title, columns, rows }) {
       <h3 className="fw600 fs24 lh48">{title}</h3>
       <table className="post-table table table-borderless">
         <tr>
-          {columns && columns.map((x, i) => (
+           {columns && columns.map((x, i) => (
             <th>
-              <div>{x}</div>
+              <div key={i}>{x}</div>
             </th>
           ))}
         </tr>
 
         {rows && rows.map((row, i) => (
-          <tr>
+          <tr key={i}>
             <td>
               <div>{row.title}</div>
             </td>
@@ -30,9 +30,9 @@ export default function PostTable({ title, columns, rows }) {
             <td>
               <SelectDot
                 items={[
-                  { id: 0, title: "Blog" },
-                  { id: 1, title: "Event" },
-                  { id: 2, title: "News etc." },
+                  { id: 0, title: "View" },
+                  { id: 1, title: "Edit" },
+                  { id: 2, title: "Delete" },
                 ]}
               />
             </td>

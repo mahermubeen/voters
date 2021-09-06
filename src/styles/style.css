@@ -212,7 +212,6 @@ h5 {
     padding: 25px 25px;
     font-size: 24px;
 }
-
 .cst-select label {
     margin-left: 20px;
 }
@@ -220,7 +219,7 @@ h5 {
 .cst-textinput label,
 .cst-select label {
     margin-bottom: 16px;
-    margin-top: 24px;
+    margin-top: 12px;
 }
 
 .cst-textinput {
@@ -327,8 +326,16 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #15141454;
 }
-
+.upload-wrap{
+    padding-top: 19px;
+}
+.addMember-form{
+    display: flex;
+    grid-gap: 50px;
+    padding-top: 10px;
+}
 .member-modal .popup {
     position: relative;
     padding: 30px;
@@ -339,9 +346,10 @@ h5 {
 
 .popup .cross-img {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 35px;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
     cursor:  pointer;
 }
 
@@ -362,6 +370,54 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+.add-btn-rel:hover{
+    color: black !important;
+    
+}
+
+.next-prev-btns{
+    display: flex;
+    grid-gap: 20px;
+}
+.form-items{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-menuuuu2{
+    top: -236px !important;
+    left: 118px !important;
+}
+.btns-questino{
+    grid-gap: 40px;
+    margin-right: -100px;
+}
+
+.max-content{
+    width: max-content !important;
+}
+.btn-abs{
+    position: absolute;
+    right: -40px;
+    top: 75px;
+}
+.member-img{
+    width: 35px;
+}
+
+.float-r{
+    float: right;
+}
+
+.add-btn-rel{
+    position: relative;
+    top: 45px;
+    background: none !important;
+    border: none !important;
+    outline:none !important;
+}
+.li-rel{
+    position: relative;
 }
 .login-form{
     padding: 65px 40px;
@@ -397,10 +453,29 @@ h5 {
     font-size: 22px;
     border-radius: 10px;
 }
-
-.addMember-form {
-    padding-top: 30px;
+.flex{
+    display: flex;
 }
+
+.gap-20{
+    grid-gap: 40px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.grid-col-4{
+    grid-template-columns: 1fr max-content max-content max-content;
+}
+.gap-10{
+    grid-gap: 20px;
+}
+.flex-column{
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+
 
 .cst-table {
     padding: 24px 50px;
@@ -503,7 +578,6 @@ h5 {
 
 .adhsfie33 {
     width: 499px;
-    margin-right: 40px;
 }
 
 .cl-p {
@@ -628,15 +702,39 @@ h5 {
 .mr-135 {
     margin-right: 135px;
 }
-
+.survy-svg svg{
+    position: absolute;
+    right: 16px;
+    top: 17px;
+    width: 15px;
+}
+.btn-primary.focus, .btn-primary:focus{
+    color: black !important;
+    background-color: white !important;
+    border-color: #717171 !important;
+    box-shadow: none !important;
+    
+}
+.type-selct button{
+    width: 225px !important;
+}
 .grid-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 35px;
 }
+.type-slct-drop{
+    z-index: 0;
+    box-shadow: none;
+    border-radius: 0 0 10px 10px;
+    border-top: 0 !important;
+    border: 1px solid #717171;
+    width: 100%;
+}
 
-.drop-menuu {
-    top: -168px !important;
+.type-slct-item{
+    padding: 5px 15px;
+    font-size: 16px;
 }
 
 .obser-content {
@@ -718,7 +816,11 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
     border: 2px solid #1869;
 }
-
+.survey-select-opt{
+    margin-top: 87px;
+    font-size: 16px !important;
+    
+}
 .staffBox .cst-select {
     display: flex;
     align-items: center;
@@ -789,7 +891,7 @@ input::-webkit-inner-spin-button {
     height: 15px;
     background: white;
     transform: rotate( 45deg);
-    left: 20px;
+    left: 78px;
     bottom: -7px;
 }
 
@@ -852,7 +954,9 @@ input::-webkit-inner-spin-button {
     font-size: 15px;
     line-height: 28px;
 }
-
+.top-15{
+    top: 15px !important;
+}
 .d-btn,
 .btn-borderd {
     padding-top: 10px;
@@ -1024,4 +1128,134 @@ input::-webkit-inner-spin-button {
     .sidebar-item {
         padding: 14px 20px;
     }
+}
+
+.notif-icon{
+    position: relative;
+}
+.notif-count{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.img-inputt{
+    position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.img-div{
+    border-color: #717171 !important;
+    color: #717171 !important;
+    box-shadow: none !important;
+    position: relative;
+    padding: 9px 26px;
+    font-size: 19px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+
+.notif-wrapper{
+    position: absolute;
+    top: 65px;
+    background: white;
+    width: 260px;
+    border: 1px solid #717171;
+    border-radius: 10px;
+    z-index: 1;
+    right: 130px;
+}
+.survey-btn{
+    position: absolute;
+    right: 50px;
+}
+.notif-wrapper h4{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #717171;
+}
+.notif-p{
+    border-bottom: 1px solid #908f8f;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.notif-p:last-child{
+    border-bottom: none;
+}
+.notif-p:hover{
+    background: #e8e4e4;
+}
+.notif-count{
+    position: absolute;
+    top: -3px;
+    right: -12px;
+    background: #ff8100;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+/* toggle btn css */
+
+.ToggleSwitch {
+    position: relative;
+    width: 5rem;
+    height: 2.35rem;
+    display: inline-block;
+}
+.ToggleSwitch.ToggleSwitch__rounded .Slider {
+    border-radius: 15rem;
+    background: #eceff1;
+    border: 1px solid #a0a0a0;
+}
+.ToggleSwitch.ToggleSwitch__rounded .Slider:before {
+    border-radius: 50%;
+}
+.ToggleSwitch .ToggleSwitch__wrapper {
+    position: relative;
+    width: 5rem;
+    height: 2.35rem;
+}
+.ToggleSwitch .ToggleSwitch__wrapper .Slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s ease;
+}
+.ToggleSwitch .ToggleSwitch__wrapper .Slider:before {
+    width: 2.45rem;
+    height: 2.45rem;
+    position: absolute;
+    background: #fff;
+    content: '';
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 0.1rem;
+    transform: translateY(-50%);
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.ToggleSwitch .ToggleSwitch__wrapper .Slider.isChecked {
+    background: #fff;
+}
+.ToggleSwitch .ToggleSwitch__wrapper .Slider.isChecked:before {
+    left: calc(100% - 0.10rem - 2.45rem);
+    background: #09f;
 }

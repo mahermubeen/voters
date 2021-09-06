@@ -2,9 +2,11 @@ import React from "react";
 import ButtonDel from "./buttondele";
 export default function TextBox({
   type,
+  classes,
   label,
   placeholder,
   hasButton,
+  
 }: {
   type: string;
   label: string;
@@ -25,7 +27,7 @@ export default function TextBox({
     <>
       <div className="cst-textinput cst-text-width">
         <label className="fw600 fs24 lh48">{label}</label>
-        <input type={type} />
+        <input className={classes} type={type} />
       </div>
     </>
   );

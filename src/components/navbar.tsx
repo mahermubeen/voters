@@ -4,6 +4,8 @@ import Icon from "../styles/Icon";
 import SelectProfile from "./generic/input/selectProfile";
 import { useHistory } from "react-router";
 import { AiOutlineMenu } from "react-icons/ai";
+import BellNotifs from "./generic/bellNotifs";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function NavbarCom() {
   const history = useHistory();
@@ -19,6 +21,8 @@ export default function NavbarCom() {
     setNav(!nav);
   };
 
+  const notifOpen = useSelector((state) => state.addMemberModal.notifOpen);
+
   return (
     <div className="cst-nav-parrent ">
       <Icon name="bell" />
@@ -29,17 +33,6 @@ export default function NavbarCom() {
             title: "Profile",
             onClick: () => history.push("staff"),
           },
-          {
-            id: 1,
-            title: "Account",
-            onClick: () => history.push("staff"),
-          },
-          {
-            id: 2,
-            title: "Settings",
-            onClick: () => history.push("staff"),
-          },
-          { id: 0, title: "Staff", onClick: () => history.push("staff") },
           {
             id: 0,
             title: "Logout",
@@ -53,6 +46,8 @@ export default function NavbarCom() {
       <button className="btn ml-2 btn-nav-st" onClick={() => onNavOpen()}>
         <AiOutlineMenu color="white" />
       </button>
+
+      {notifOpen ? <BellNotifs text="Notifications" /> : ""}
     </div>
   );
 }

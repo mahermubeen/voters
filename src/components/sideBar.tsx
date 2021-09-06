@@ -12,7 +12,7 @@ export default function Sidebar(porps: any) {
           <img src='img/logo1.png' />
         </div>
         <SideBarItem
-          nav='/'
+          nav='/home'
           icon='img/dashboard.png'
           active={porps.active == 0 ? true : false}
           title='Dashboard'
@@ -36,34 +36,34 @@ export default function Sidebar(porps: any) {
           title='Observers'
         />
         <SideBarItem
-          nav='/newsurveys'
+          nav='/surveys'
           icon='img/4.png'
           active={porps.active == 4 ? true : false}
           title='Surveys'
         />
         <SideBarItem
-          nav='/pages'
+          nav='/candidate'
           icon='img/5.png'
           active={porps.active == 5 ? true : false}
-          title='Create Page'
-        />
-        <SideBarItem
-          nav='/candidate'
-          icon='img/6.png'
-          active={porps.active == 6 ? true : false}
-          title='Observer Data'
+          title='Candidates'
         />
         <SideBarItem
           nav='/uploadbanner'
-          icon='img/7.png'
-          active={porps.active == 7 ? true : false}
+          icon='img/6.png'
+          active={porps.active == 6 ? true : false}
           title='Banner Images'
         />
         <SideBarItem
-          nav='members'
+          nav='/members'
+          icon='img/7.png'
+          active={porps.active == 7 ? true : false}
+          title='Members'
+        />
+        <SideBarItem
+          nav='/offices'
           icon='img/8.png'
           active={porps.active == 8 ? true : false}
-          title='Members'
+          title='Offices'
         />
       </div>
     </div>

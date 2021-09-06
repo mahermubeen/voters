@@ -4,11 +4,10 @@ import Home from "./pages/index";
 import Candidate from "./pages/candidate";
 import Managecontent from "./pages/managecontent";
 import Members from "./pages/members";
-import Newsurveys from "./pages/newsurveys";
+import Surveys from "./pages/surveys";
 import Observer from "./pages/observer";
 import Observerrequest from "./pages/observerrequest";
 import Pages from "./pages/pages";
-import Totalsurveys from "./pages/totalsurveys";
 import Uploadbanner from "./pages/uploadbanner";
 import Uploadcontent from "./pages/uploadcontent";
 import Uploadimage from "./pages/uploadimage";
@@ -18,6 +17,9 @@ import Candidates from "./pages/candidates";
 import NewCandidates from "./pages/newCandidate";
 import Observers from "./pages/observers";
 import Login from "./pages/login";
+import Addsurvey from "./pages/addSurvey";
+import Offices from "./pages/offices";
+
 import "./App.css";
 
 function App() {
@@ -31,17 +33,18 @@ function App() {
       <Route exact path="/newcandidate" component={NewCandidates} />{" "}
       <Route exact path="/managecontent" component={Managecontent} />{" "}
       <Route exact path="/members" component={Members} />{" "}
-      <Route exact path="/newsurveys" component={Newsurveys} />{" "}
+      <Route exact path="/surveys" component={Surveys} />{" "}
+      <Route exact path="/addsurvey" component={Addsurvey} />{" "}
       <Route exact path="/observer" component={Observer} />{" "}
       <Route exact path="/observers" component={Observers} />{" "}
       <Route exact path="/observerrequest" component={Observerrequest} />{" "}
       <Route exact path="/pages" component={Pages} />{" "}
-      <Route exact path="/totalsurveys" component={Totalsurveys} />{" "}
       <Route exact path="/uploadbanner" component={Uploadbanner} />{" "}
       <Route exact path="/uploadcontent" component={Uploadcontent} />{" "}
       <Route exact path="/uploadimage" component={Uploadimage} />{" "}
       <Route exact path="/staff" component={Staff} />{" "}
       <Route exact path="/newstaff" component={NewStaff} />{" "}
+      <Route exact path="/offices" component={Offices} />{" "}
     </Switch>
   );
 }

@@ -26,7 +26,7 @@ export default function Bar({
           <SelectDot
             items={[
               { id: 0, title: 'View' },
-              { id: 1, title: 'Approve' },
+              { id: 1, title: 'Comment' },
               { id: 2, title: 'Delete' },
             ]}
           />

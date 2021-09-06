@@ -3,7 +3,7 @@ import SelectDot from "../input/selectDot";
 import { useGetElectionQuery } from "../../../services/electionCenter";
 import { useHistory } from "react-router";
 
-export default function MemberTable({
+export default function OfficesTable({
   title,
   columns,
   rows,
@@ -64,9 +64,6 @@ export default function MemberTable({
               </td>
               <td>
                 <div className="lbl-grn">{row.name}</div>
-              </td>
-              <td>
-                <div>{row.email}</div>
               </td>
               <td>{ElectionLocation(row.electionCenter)}</td>
               <td>{CenterName(row.electionCenter)}</td>

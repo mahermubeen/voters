@@ -37,9 +37,13 @@ export const pageApi = createApi({
       }),
     }),
     updatePage: builder.mutation({
-      query: ({ id, token, ...patch }) => ({
+      query: ({ id, title, positionNo, token, ...patch }) => ({
         url: `page/${id}`,
         method: "PATCH",
+        body: {
+          title: title,
+          positionNo: positionNo,
+        },
         headers: {
           "Content-type": "application/json; charset=UTF-8",
           Authorization: `Bearer ${token}`,
