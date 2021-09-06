@@ -26,8 +26,8 @@ function App() {
 
   return (
     <Switch>
-      {/* <Route exact path="/" component={Login} />{" "} */}
-      <Route exact path="/" component={Home} />{" "}
+      <Route exact path="/" component={Login} />{" "}
+      <Route exact path="/home" component={Home} />{" "}
       <Route exact path="/candidate" component={Candidate} />{" "}
       <Route exact path="/candidates" component={Candidates} />{" "}
       <Route exact path="/newcandidate" component={NewCandidates} />{" "}
