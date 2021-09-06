@@ -12,7 +12,7 @@ export default function Sidebar(porps: any) {
           <img src='img/logo1.png' />
         </div>
         <SideBarItem
-          nav='/home'
+          nav='/'
           icon='img/dashboard.png'
           active={porps.active == 0 ? true : false}
           title='Dashboard'
